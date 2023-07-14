@@ -86,7 +86,7 @@ void loop()
   //print velocity on SSD1306 
   if(velocity >= 3)
   { 
-    sendSMS("01048903017", "Current Speed : ", velocity, "km/h  \r\nYou're speeding.  \r\nSlow down");  // 스위치 누를 때 SMS 전송 함수 호출
+    sendSMS("010xxxxxxxx", "Current Speed : ", velocity, "km/h  \r\nYou're speeding.  \r\nSlow down");  // 스위치 누를 때 SMS 전송 함수 호출//전화번호 직접 기입
 
     display.clearDisplay();
     display.setTextColor(BLACK,WHITE);
